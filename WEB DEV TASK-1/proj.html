@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game</title>
+    <link rel="stylesheet" href="proj.css">
+</head>
+
+<body>
+   
+        <div class="top-bar">
+            <div id="turn-display"></div>
+            <div id="timer-display"></div>
+            
+        </div>
+       <div class="main-cont">
+            <div>
+                <div id="image3"></div>
+                <p id="summa1">PLAYER 1</p>
+            </div>
+            
+      
+            <div id="board" class="board"></div>
+            <div>
+                <div id="image4"></div>
+                <p id="summa2">PLAYER 2</p>
+            </div>
+            
+       </div>
+        <div class="bottom-bar">
+            <button onclick="pleasestartGame()">Start Game</button>
+            <button id="pause-btn">Pause Game</button>
+            <button id="resume-btn">Resume Game</button>
+            <button onclick="resetGame()">Reset Game</button>
+            <button id="undo-btn" onclick="undoMove()">Undo</button>
+            <button id="redo-btn" onclick="redoMode()">Redo</button>
+
+            
+        </div>
+        
+       <div>
+            <p id="jap">跳ね返るランブル</p>
+       </div>
+        
+       
+    
+    
+    <audio id="sound-effect" src="laser-gun-81720.mp3"></audio>
+    <audio id="sound-effect2" src="gun-load-88938.mp3"></audio>
+    <audio id="sound-effect3" src="medium-explosion-40472.mp3"></audio>
+    <audio id="sound-effect4" src="boing-2-44164.mp3"></audio>
+    <audio id="sound-effect5" src="epic-object-placing-105779.mp3"></audio>
+    
+</body>
+<script src="proj5.js"></script>
+</html>
